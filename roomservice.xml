@@ -2,6 +2,7 @@
 <manifest>
 
   <!-- Add remotes -->
+    <remote fetch="https://github.com/" name="GZOSP" revision="8.1" />
     <remote fetch="https://github.com/" name="LineageOS" revision="lineage-15.1" />
     <remote fetch="https://github.com/" name="ooOJust4FunOoo" revision="lineage-15.1" />
     <remote fetch="https://github.com/" name="opengapps" revision="master" />
@@ -43,9 +44,16 @@
       <remove-project name="platform/hardware/intel/common/libstagefrighthw" />
       <remove-project name="platform/hardware/intel/common/wrs_omxil_core" />
     <!-- Hardware QCOM -->
+      <!--remove-project name="LineageOS/android_hardware_qcom_audio" /-->
+      <!--remove-project name="LineageOS/android_hardware_qcom_bt" /-->
       <remove-project name="LineageOS/android_hardware_qcom_display" />
       <remove-project name="LineageOS/android_hardware_qcom_gps" />
+      <!--remove-project name="LineageOS/android_hardware_qcom_keymaster" /-->
+      <remove-project name="LineageOS/android_hardware_qcom_media" />
+      <!--remove-project name="LineageOS/android_hardware_qcom_power" /-->
+      <!--remove-project name="LineageOS/android_hardware_qcom_wlan" /-->
     <!-- Hardware Other -->
+      <remove-project name="LineageOS/android_hardware_ril" />
       <remove-project name="platform/hardware/marvell/bt" />
     <!-- Kernel/tests -->
     <!-- Prebuilts -->
@@ -81,6 +89,20 @@
     <!-- Hardware Other -->
     <!-- Vendor -->
     <!-- Apps -->
+
+  <!-- GZOSP -->
+    <!-- Hardware QCOM -->
+      <!--project name="GZOSP/hardware_qcom_audio" path="hardware/qcom/audio/default" remote="GZOSP" /-->
+      <!--project name="GZOSP/hardware_qcom_bt" path="hardware/qcom/bt" remote="GZOSP" /-->
+      <!--project name="GZOSP/hardware_qcom_display" path="hardware/qcom/display" remote="GZOSP" /-->
+      <!--project name="GZOSP/hardware_qcom_gps" path="hardware/qcom/gps" remote="GZOSP" /-->
+      <!--project name="GZOSP/hardware_qcom_keymaster" path="hardware/qcom/keymaster" remote="GZOSP" /-->
+      <project name="GZOSP/hardware_qcom_media" path="hardware/qcom/media" remote="GZOSP" />
+      <!--project name="GZOSP/hardware_qcom_power" path="hardware/qcom/power" remote="GZOSP" /-->
+      <!--project name="GZOSP/hardware_qcom_wlan" path="hardware/qcom/wlan" remote="GZOSP" /-->
+    <!-- Hardware Other -->
+      <project name="GZOSP/hardware_ril" path="hardware/ril" remote="GZOSP"/>
+    <!-- Vendor -->
 
   <!-- LineageOS -->
     <!-- Device QCOM -->
