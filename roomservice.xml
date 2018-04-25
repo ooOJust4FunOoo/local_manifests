@@ -9,7 +9,9 @@
     <remote fetch="https://github.com/" name="TheMuppets" revision="lineage-15.1" />
     <remote fetch="https://github.com/" name="RR-Devices" revision="8.1" />
     <remote fetch="https://bitbucket.org/" name="ubertc" revision="master" />
-    <remote fetch="https://github.com/" name="Unlegacy" revision="stable" />
+    <remote fetch="https://github.com/" name="Unlegacy" />
+    <remote fetch="https://github.com/" name="WalkerFactory" revision="stable" />
+    <!--remote fetch="https://github.com/" name="WalkerFactory" revision="walker" /-->
 
   <!-- Remove some repos from default.xml manifest -->
     <!-- Apps -->
@@ -36,8 +38,8 @@
       <remove-project name="device/google/contexthub" />
       <remove-project name="device/sample" />
     <!-- External -->
-      <remove-project name="platform/external/autotest" />
-      <remove-project name="platform/external/linux-kselftest" />
+      <!--remove-project name="platform/external/autotest" /-->
+      <!--remove-project name="platform/external/linux-kselftest" /-->
     <!-- Hardware Intel -->
       <remove-project name="platform/hardware/intel/audio_media" />
       <remove-project name="platform/hardware/intel/bootstub" />
@@ -77,17 +79,20 @@
 
   <!-- Hammerhead Specific -->
     <!-- Device -->
-      <project name="ooOJust4FunOoo/android_device_lge_hammerhead_RR" path="device/lge/hammerhead" remote="ooOJust4FunOoo" revision="lineage-15.1" />
       <!--project name="DirtyUnicorns/android_device_lge_hammerhead" path="device/lge/hammerhead" remote="DirtyUnicorns" /-->
       <!--project name="LineageOS/android_device_lge_hammerhead" path="device/lge/hammerhead" remote="LineageOS" /-->
+      <project name="ooOJust4FunOoo/android_device_lge_hammerhead_RR" path="device/lge/hammerhead" remote="ooOJust4FunOoo" revision="lineage-15.1" />
+      <!--project name="Unlegacy-Android/android_device_lge_hammerhead" path="device/lge/hammerhead" remote="Unlegacy" revision="aosp-8.1" /-->
     <!-- Kernel -->
-      <!--project name="Unlegacy-Android/android_kernel_lge_hammerhead" path="kernel/lge/hammerhead" remote="Unlegacy" /-->
-      <project name="DirtyUnicorns/android_kernel_lge_hammerhead" path="kernel/lge/hammerhead" remote="DirtyUnicorns" />
+      <!--project name="DirtyUnicorns/android_kernel_lge_hammerhead" path="kernel/lge/hammerhead" remote="DirtyUnicorns" /-->
       <!--project name="ooOJust4FunOoo/android_kernel_lge_hammerhead" path="kernel/lge/hammerhead" remote="ooOJust4FunOoo" /-->
+      <!--project name="Unlegacy-Android/android_kernel_lge_hammerhead" path="kernel/lge/hammerhead" remote="Unlegacy" revision="stable" /-->
+      <project name="WalkerFactory/android_kernel_lge_hammerhead" path="kernel/lge/hammerhead" remote="WalkerFactory" />
     <!-- Vendor -->
-      <!--project name="ResurrectionRemix-Devices/proprietary_vendor_lge" path="vendor/lge" remote="RR-Devices" /-->
       <!--project name="DirtyUnicorns/android_vendor_lge" path="vendor/lge" remote="DirtyUnicorns" /-->
+      <!--project name="ResurrectionRemix-Devices/proprietary_vendor_lge" path="vendor/lge" remote="RR-Devices" /-->
       <project name="TheMuppets/proprietary_vendor_lge" path="vendor/lge" remote="TheMuppets" />
+      <!--project name="Unlegacy-Android/proprietary_vendor_lge" path="vendor/lge" remote="Unlegacy" revision="aosp-8.1" /-->
 
   <!-- DirtyUnicorns -->
     <!-- Hardware Other -->
@@ -111,12 +116,18 @@
     <!-- Hardware Other -->
     <!-- Vendor -->
     <!-- Apps -->
+      <!--project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="LineageOS" /-->
+      <!--project name="LineageOS/android_packages_apps_FlipFlap" path="packages/apps/FlipFlap" remote="LineageOS" /-->
+
+  <!-- Unlegacy-Android -->
+    <!-- Vendor QCOM -->
+      <!--project name="Unlegacy-Android/proprietary_vendor_qcom" path="vendor/qcom" remote="Unlegacy" revision="aosp-8.1" /-->
 
   <!-- toolchains -->
     <!-- arm-eabi-* -->
-      <!--project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="UBERTC/arm-eabi-4.8" remote="ubertc" revision="master" /-->
+      <!--project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-uber" name="UBERTC/arm-eabi-4.9" remote="ubertc" revision="master" /-->
     <!-- arm-linux-androideabi-* -->
-      <!--project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="UBERTC/arm-linux-androideabi-4.9" remote="ubertc" revision="master" /-->
+      <!--project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-uber" name="UBERTC/arm-linux-androideabi-4.9" remote="ubertc" revision="master" /-->
 
   <!-- OpenGAPPS -->
     <!--project name="opengapps/aosp_build" path="vendor/opengapps/build" remote="opengapps" /-->
