@@ -2,16 +2,12 @@
 <manifest>
 
   <!-- Add remotes -->
-    <remote fetch="https://github.com/" name="DirtyUnicorns" revision="o8x" />
     <remote fetch="https://github.com/" name="LineageOS" revision="lineage-15.1" />
     <remote fetch="https://github.com/" name="ooOJust4FunOoo" revision="lineage-15.1" />
     <remote fetch="https://github.com/" name="opengapps" revision="master" />
     <remote fetch="https://github.com/" name="TheMuppets" revision="lineage-15.1" />
-    <remote fetch="https://github.com/" name="RR-Devices" revision="8.1" />
     <remote fetch="https://bitbucket.org/" name="ubertc" revision="master" />
     <remote fetch="https://github.com/" name="Unlegacy" />
-    <remote fetch="https://github.com/" name="WalkerFactory" revision="stable" />
-    <!--remote fetch="https://github.com/" name="WalkerFactory" revision="walker" /-->
 
   <!-- Remove some repos from default.xml manifest -->
     <!-- Apps -->
@@ -53,7 +49,7 @@
       <!--remove-project name="LineageOS/android_hardware_qcom_gps" /-->
       <!--remove-project name="LineageOS/android_hardware_qcom_keymaster" /-->
       <!--remove-project name="LineageOS/android_hardware_qcom_media" /-->
-      <!--remove-project name="LineageOS/android_hardware_qcom_power" /-->
+      <remove-project name="LineageOS/android_hardware_qcom_power" />
       <!--remove-project name="LineageOS/android_hardware_qcom_wlan" /-->
     <!-- Hardware Other -->
       <!--remove-project name="LineageOS/android_hardware_interfaces" /-->
@@ -79,25 +75,16 @@
 
   <!-- Hammerhead Specific -->
     <!-- Device -->
-      <!--project name="DirtyUnicorns/android_device_lge_hammerhead" path="device/lge/hammerhead" remote="DirtyUnicorns" /-->
       <!--project name="LineageOS/android_device_lge_hammerhead" path="device/lge/hammerhead" remote="LineageOS" /-->
       <project name="ooOJust4FunOoo/android_device_lge_hammerhead_RR" path="device/lge/hammerhead" remote="ooOJust4FunOoo" revision="lineage-15.1" />
       <!--project name="Unlegacy-Android/android_device_lge_hammerhead" path="device/lge/hammerhead" remote="Unlegacy" revision="aosp-8.1" /-->
     <!-- Kernel -->
-      <!--project name="DirtyUnicorns/android_kernel_lge_hammerhead" path="kernel/lge/hammerhead" remote="DirtyUnicorns" /-->
-      <!--project name="ooOJust4FunOoo/android_kernel_lge_hammerhead" path="kernel/lge/hammerhead" remote="ooOJust4FunOoo" /-->
+      <!--project name="LineageOS/android_kernel_lge_hammerhead" path="kernel/lge/hammerhead" remote="LineageOS" /-->
+      <project name="ooOJust4FunOoo/android_kernel_lge_hammerhead_RR" path="kernel/lge/hammerhead" remote="ooOJust4FunOoo" revision="stable" />
       <!--project name="Unlegacy-Android/android_kernel_lge_hammerhead" path="kernel/lge/hammerhead" remote="Unlegacy" revision="stable" /-->
-      <project name="WalkerFactory/android_kernel_lge_hammerhead" path="kernel/lge/hammerhead" remote="WalkerFactory" />
     <!-- Vendor -->
-      <!--project name="DirtyUnicorns/android_vendor_lge" path="vendor/lge" remote="DirtyUnicorns" /-->
-      <!--project name="ResurrectionRemix-Devices/proprietary_vendor_lge" path="vendor/lge" remote="RR-Devices" /-->
       <project name="TheMuppets/proprietary_vendor_lge" path="vendor/lge" remote="TheMuppets" />
       <!--project name="Unlegacy-Android/proprietary_vendor_lge" path="vendor/lge" remote="Unlegacy" revision="aosp-8.1" /-->
-
-  <!-- DirtyUnicorns -->
-    <!-- Hardware Other -->
-    <!-- Vendor -->
-      <!--project name="DirtyUnicorns/android_vendor_extras" path="vendor/extras" remote="DirtyUnicorns" /-->
 
   <!-- ooOJust4FunOoo -->
     <!-- Device QCOM -->
@@ -116,10 +103,20 @@
     <!-- Hardware Other -->
     <!-- Vendor -->
     <!-- Apps -->
-      <!--project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="LineageOS" /-->
-      <!--project name="LineageOS/android_packages_apps_FlipFlap" path="packages/apps/FlipFlap" remote="LineageOS" /-->
 
   <!-- Unlegacy-Android -->
+    <!-- Hardware QCOM -->
+      <!--project name="Unlegacy-Android/android_hardware_qcom_audio" path="hardware/qcom/audio" remote="Unlegacy" groups="qcom,qcom_audio" revision="aosp-8.1" /-->
+      <!--project name="Unlegacy-Android/android_hardware_qcom_bt" path="hardware/qcom/bt" remote="Unlegacy" groups="qcom" revision="aosp-8.1" /-->
+      <!--project name="Unlegacy-Android/android_hardware_qcom_display" path="hardware/qcom/display" remote="Unlegacy" groups="pdk,qcom,qcom_display" revision="aosp-8.1" /-->
+      <!--project name="Unlegacy-Android/android_hardware_qcom_gps" path="hardware/qcom/gps" remote="Unlegacy" groups="qcom,qcom_gps" revision="aosp-8.1" /-->
+      <!--project name="Unlegacy-Android/android_hardware_qcom_keymaster" path="hardware/qcom/keymaster" remote="Unlegacy" groups="qcom,qcom_keymaster" revision="aosp-8.1" /-->
+      <!--project name="Unlegacy-Android/android_hardware_qcom_media" path="hardware/qcom/media" remote="Unlegacy" groups="qcom" revision="aosp-8.1" /-->
+      <project name="Unlegacy-Android/android_hardware_qcom_power" path="hardware/qcom/power" remote="Unlegacy" groups="qcom,pdk" revision="aosp-8.1" />
+      <!--project name="Unlegacy-Android/android_hardware_qcom_wlan" path="hardware/qcom/wlan" remote="Unlegacy" groups="pdk,qcom_wlan" revision="aosp-8.1" /-->
+    <!-- Hardware Other -->
+      <!--project name="Unlegacy-Android/android_hardware_ril" path="hardware/ril" remote="Unlegacy" groups="pdk" revision="aosp-8.1" /-->
+      <!--project name="Unlegacy-Android/android_hardware_interfaces" path="hardware/interfaces" remote="Unlegacy" groups="pdk" revision="aosp-8.1" /-->
     <!-- Vendor QCOM -->
       <!--project name="Unlegacy-Android/proprietary_vendor_qcom" path="vendor/qcom" remote="Unlegacy" revision="aosp-8.1" /-->
 
