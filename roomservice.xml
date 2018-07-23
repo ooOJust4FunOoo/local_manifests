@@ -91,6 +91,7 @@
     <!-- Hardware QCOM -->
       <!--project name="ooOJust4FunOoo/android_hardware_qcom_display" path="hardware/qcom/display" remote="ooOJust4FunOoo" revision="lineage-15.1" /-->
       <!--project name="ooOJust4FunOoo/android_hardware_qcom_gps" path="hardware/qcom/gps" remote="ooOJust4FunOoo" revision="lineage-15.1" /-->
+      <project name="ooOJust4FunOoo/android_hardware_qcom_power" path="hardware/qcom/power" remote="ooOJust4FunOoo" revision="aosp-8.1" />
     <!-- Hardware Other -->
     <!-- Vendor -->
     <!-- Apps -->
@@ -112,7 +113,7 @@
       <!--project name="Unlegacy-Android/android_hardware_qcom_gps" path="hardware/qcom/gps" remote="Unlegacy" groups="qcom,qcom_gps" revision="aosp-8.1" /-->
       <!--project name="Unlegacy-Android/android_hardware_qcom_keymaster" path="hardware/qcom/keymaster" remote="Unlegacy" groups="qcom,qcom_keymaster" revision="aosp-8.1" /-->
       <!--project name="Unlegacy-Android/android_hardware_qcom_media" path="hardware/qcom/media" remote="Unlegacy" groups="qcom" revision="aosp-8.1" /-->
-      <project name="Unlegacy-Android/android_hardware_qcom_power" path="hardware/qcom/power" remote="Unlegacy" groups="qcom,pdk" revision="aosp-8.1" />
+      <!--project name="Unlegacy-Android/android_hardware_qcom_power" path="hardware/qcom/power" remote="Unlegacy" groups="qcom,pdk" revision="aosp-8.1" /-->
       <!--project name="Unlegacy-Android/android_hardware_qcom_wlan" path="hardware/qcom/wlan" remote="Unlegacy" groups="pdk,qcom_wlan" revision="aosp-8.1" /-->
     <!-- Hardware Other -->
       <!--project name="Unlegacy-Android/android_hardware_ril" path="hardware/ril" remote="Unlegacy" groups="pdk" revision="aosp-8.1" /-->
